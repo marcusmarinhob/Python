@@ -18,10 +18,25 @@ ser = serial.Serial(
 	bytesize=serial.SEVENBITS
 )
 
+# Open file with AT Commands
+f = open('ATCOMMANDS.txt', 'r')
+
+# Counter for number of commands
+commandNumber = 1
 
 while 1 :
-    # Get AT Command (implemmented after)
-    ATCommand = 'AT+Test'
+    # Get AT Command in the file (row by row)
+    ATCommand = f.readline().replace('\n','')
+
+    # Test if END command is read to finish application
+    if ATCommand == 'END':
+        print("FINISHED!")
+        # quit()        
+        break
+
+    # Show the test progress
+    print('AT' + '%d' %commandNumber + ' : ' + ATCommand )
+    commandNumber += 1
 
     # Send the characters under Serial Tx
     ser.write(str.encode(ATCommand+'\r\n'))
