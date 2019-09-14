@@ -1,8 +1,8 @@
-from kivy.app import App
-from kivy.uix.button import Button
+from kivy.app import App                   # Importing class kivy.app in order to create a new app
+from kivy.uix.button import Button         # Importing class kivy.uix.button in order to create a new button object 
 
-class Test(App):
-    def build(self):
-        return Button(text = 'Hello World!')
+class Test(App):                                # Creating the class Test inheriting class App properties
+    def build(self):                                    # New method for the class Test
+        return Button(text = 'Hello World!')            # Creation of the Button ('Hello World')
 
-Test().run()
+Test().run()                               # Run the Test app
