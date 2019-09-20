@@ -9,10 +9,14 @@ print('Blastoff!')
 
 
 # Auto git saving #####################################################
-import os
+save = 1
+commitMsg = "1. Testing git saving" 
 
-fileName = os.path.basename(__file__)
-commitMsg = "1. Added Auto git saving to the code" 
+if save:
+    import os
 
-os.system("git add "+ fileName)
-os.system('git commit -m '+'"'+commitMsg+'"')
+    fileName = os.path.basename(__file__)    
+
+    os.system('git add '+ fileName)
+    os.system('git commit -m '+'"'+commitMsg+'"')
+    os.system('git push')
