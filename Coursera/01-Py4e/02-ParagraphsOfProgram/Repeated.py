@@ -10,7 +10,7 @@ print('Blastoff!')
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = "1. Testing git saving" 
+commitMsg = '1. Testing git saving' 
 
 if save:
     import os
