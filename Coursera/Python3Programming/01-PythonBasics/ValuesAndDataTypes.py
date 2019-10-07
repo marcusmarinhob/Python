@@ -18,7 +18,7 @@ commitMsg = '1. Values and Data Types.'
 
 if save:
     print('\nAUTO GIT SAVING...')
-
+    
     fileName = os.path.basename(__file__)    
 
     os.system('git add '+ fileName)
