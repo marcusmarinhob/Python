@@ -12,34 +12,20 @@ alex.pensize(10)
 alex.color(1.0, 1.0, 1.0)
 
 alex.forward(150)      
-alex.left(90)           
-alex.forward(300)       
-alex.left(90)           
+alex.left(120) 
 alex.forward(300)      
-alex.left(90)           
-alex.forward(300)       
-alex.left(90)
-alex.forward(150)
+alex.left(120)    
+alex.forward(300)      
+alex.left(120)     
+alex.forward(150)    
 
-mike = turtle.Turtle() # Creates a turtle named mike
+wn.exitonclick()
 
-mike.pensize(10)
-mike.color(0.0, 0.0, 0.0)
 
-mike.forward(150)      
-mike.right(90)           
-mike.forward(300)       
-mike.right(90)           
-mike.forward(300)      
-mike.right(90)           
-mike.forward(300)       
-mike.right(90)
-mike.forward(150)
-wn.exitonclick()  
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Turtle Lib - Creating tow squares, changing background color, pencil size and color.' 
+commitMsg = '1. Turtle Lib - Creating a triangle' 
 
 if save:
     print('\nAUTO GIT SAVING...')
