@@ -7,17 +7,27 @@ import turtle           # Allow us to use the turtles library
 wn = turtle.Screen()    # Creates a graphics window
 wn.bgcolor(0.0, 0.50, 1.0)
 
-alex = turtle.Turtle()  # Creates a turtle named alex
-alex.pensize(10)
-alex.color(1.0, 1.0, 1.0)
+elan = turtle.Turtle()
+elan.pensize(7)
+elan.color(1.0, 0.5, 0.0)
 
-alex.forward(150)      
-alex.left(120) 
-alex.forward(300)      
-alex.left(120)    
-alex.forward(300)      
-alex.left(120)     
-alex.forward(150)    
+distance = 50
+for _ in range(10):
+    elan.forward(distance)
+    elan.right(90)
+    distance = distance + 20
+
+elan.left(90)
+elan.forward(100)
+
+elan.color(1.0, 1.0, 1.0)
+
+
+radio = 0.5
+for index in range(100):
+    elan.forward(radio)
+    elan.left(15)
+    radio = radio + 0.5
 
 wn.exitonclick()
 
@@ -25,7 +35,7 @@ wn.exitonclick()
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Turtle Lib - Creating a triangle' 
+commitMsg = '1. Turtle Lib - Creating spirals' 
 
 if save:
     print('\nAUTO GIT SAVING...')
