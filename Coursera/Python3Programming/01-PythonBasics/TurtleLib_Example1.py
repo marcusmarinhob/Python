@@ -5,19 +5,41 @@ print('\n# BEGIN OF THE SCRIPT #############################################')
 
 import turtle           # Allow us to use the turtles library
 wn = turtle.Screen()    # Creates a graphics window
+wn.bgcolor(0.0, 0.50, 1.0)
+
 alex = turtle.Turtle()  # Creates a turtle named alex
-alex.forward(150)       # Tell alex to move foward by 150 units
-alex.left(90)           # Turn by 90 degrees
-alex.forward(75)        # Complete the second side of a rectangle
-alex.left(90)           # Turn by 90 degrees
-alex.forward(150)       # Tell alex to move foward by 150 units
-alex.left(90)           # Turn by 90 degrees
-alex.forward(75)        # Complete the rectangle
-wn.exitonclick()        # wait for a user click on the canvas
+alex.pensize(10)
+alex.color(1.0, 1.0, 1.0)
+
+alex.forward(150)      
+alex.left(90)           
+alex.forward(300)       
+alex.left(90)           
+alex.forward(300)      
+alex.left(90)           
+alex.forward(300)       
+alex.left(90)
+alex.forward(150)
+
+mike = turtle.Turtle() # Creates a turtle named mike
+
+mike.pensize(10)
+mike.color(0.0, 0.0, 0.0)
+
+mike.forward(150)      
+mike.right(90)           
+mike.forward(300)       
+mike.right(90)           
+mike.forward(300)      
+mike.right(90)           
+mike.forward(300)       
+mike.right(90)
+mike.forward(150)
+wn.exitonclick()  
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Turtle Lib - Creating a rectangle using Turtle Library.' 
+commitMsg = '1. Turtle Lib - Creating tow squares, changing background color, pencil size and color.' 
 
 if save:
     print('\nAUTO GIT SAVING...')
