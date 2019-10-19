@@ -3,18 +3,27 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-accum = 0
-for w in nums:
-    accum = accum + w
-print(accum)
+print("range(5): ")
+for i in range(5):
+    print(i)
+
+print("range(0,5): ")
+for i in range(0, 5):
+    print(i)
+
+# Notice the casting of `range` to the `list`
+print(list(range(5)))
+print(list(range(0,5)))
+
+# Note: `range` function is already casted as `list` in the textbook
+print(range(5))
 
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Loop for and Turtle - Accumulator.' 
+commitMsg = '1. Loop for and Turtle - Range.' 
 
 if save:
     print('\nAUTO GIT SAVING...')
