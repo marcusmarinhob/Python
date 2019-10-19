@@ -7,7 +7,8 @@ import turtle            # set up alex
 wn = turtle.Screen()
 alex = turtle.Turtle()
 
-for i in [0, 1, 2, 3]:      # repeat four times
+for aColor in ["yellow", "red", "purple", "blue"]:
+    alex.color(aColor)
     alex.forward(50)
     alex.left(90)
 
@@ -15,9 +16,10 @@ wn.exitonclick()
 
 
 
+
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Loop for and Turtle.' 
+commitMsg = '1. Loop for and Turtle - Changing the color.' 
 
 if save:
     print('\nAUTO GIT SAVING...')
