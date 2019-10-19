@@ -3,23 +3,18 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-import turtle            # set up alex
-wn = turtle.Screen()
-alex = turtle.Turtle()
-
-for aColor in ["yellow", "red", "purple", "blue"]:
-    alex.color(aColor)
-    alex.forward(50)
-    alex.left(90)
-
-wn.exitonclick()
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+accum = 0
+for w in nums:
+    accum = accum + w
+print(accum)
 
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Loop for and Turtle - Changing the color.' 
+commitMsg = '1. Loop for and Turtle - Accumulator.' 
 
 if save:
     print('\nAUTO GIT SAVING...')
