@@ -3,10 +3,10 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-inviteList = ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris", "Marcus"]
+fruits = ["apple","orange","banana","cherry"]
 
-for name in inviteList:
-    print("Hi", name, "Please come to my party on Saturday!")
+for afruit in fruits:     # by item
+    print(afruit)
 
 
 
