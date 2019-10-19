@@ -3,16 +3,21 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-fruits = ["apple","orange","banana","cherry"]
+import turtle            # set up alex
+wn = turtle.Screen()
+alex = turtle.Turtle()
 
-for afruit in fruits:     # by item
-    print(afruit)
+for i in [0, 1, 2, 3]:      # repeat four times
+    alex.forward(50)
+    alex.left(90)
+
+wn.exitonclick()
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Loop for.' 
+commitMsg = '1. Loop for and Turtle.' 
 
 if save:
     print('\nAUTO GIT SAVING...')
