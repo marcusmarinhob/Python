@@ -3,9 +3,16 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-a = [81, 82, 83]
-b = a
+a = [81,82,83]
+b = [81,82,83]
 print(a is b)
+
+b = a
+print(a == b)
+print(a is b)
+
+b[0] = 5
+print(a)
 
 
 
