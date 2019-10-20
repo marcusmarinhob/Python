@@ -3,12 +3,14 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-for counter, item in enumerate(['apple', 'pear', 'apricot', 'cherry', 'peach']):
-    print(counter, item)
+for i in range(5):
+    for j in range(3):
+        print(i, j)
+
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Loop for - Enumerate.' 
+commitMsg = '1. Loop for - Two loops.' 
 
 if save:
     print('\nAUTO GIT SAVING...')
