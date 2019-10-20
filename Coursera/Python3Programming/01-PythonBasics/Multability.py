@@ -3,12 +3,10 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-fruit = ["banana", "apple", "cherry"]
-print(fruit)
+alist = ['a', 'b', 'c', 'd', 'e', 'f']
+alist[1:3] = ['x', 'y']
+print(alist)
 
-fruit[0] = "pear"
-fruit[-1] = "orange"
-print(fruit)
 
 
 
