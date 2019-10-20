@@ -3,16 +3,10 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-a = [81,82,83]
-
-b = a[:]       # make a clone using slice
-print(a == b)
-print(a is b)
-
-b[0] = 5
-
-print(a)
-print(b)
+alist = [4,2,8,6,5]
+blist = alist * 2
+blist[3] = 999
+print(alist)
 
 
 
