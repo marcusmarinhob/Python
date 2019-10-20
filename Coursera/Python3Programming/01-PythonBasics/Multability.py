@@ -3,17 +3,19 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-alist = ['a', 'd', 'f']
-alist[1:1] = ['b', 'c']
-print(alist)
-alist[4:4] = ['e']
+a = ['one', 'two', 'three']
+del a[1]
+print(a)
+
+alist = ['a', 'b', 'c', 'd', 'e', 'f']
+del alist[1:5]
 print(alist)
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Multability.' 
+commitMsg = '1. Multability - Deleting' 
 
 if save:
     print('\nAUTO GIT SAVING...')
