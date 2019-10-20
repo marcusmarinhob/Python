@@ -4,7 +4,7 @@ os.system('cls')
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
-alist[1:3] = ['x', 'y']
+alist[1:3] = []
 print(alist)
 
 
