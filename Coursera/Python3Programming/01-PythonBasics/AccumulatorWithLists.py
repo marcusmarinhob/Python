@@ -3,12 +3,11 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-nums = [3, 5, 8]
-accum = []
-for w in nums:
-    x = w**2
-    accum.append(x)
-print(accum)
+list= [3,0,9,4,1,7]
+new_list=[]
+for i in range(len(list)):
+   new_list.append(list[i]+5)
+print(new_list)
 
 
 
