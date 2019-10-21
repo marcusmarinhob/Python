@@ -3,9 +3,12 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-person = input('Your name: ')
-greeting = 'Hello {}!'.format(person)
-print(greeting)
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
+print(calculation)
+
 
 
 
