@@ -3,12 +3,15 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-ss = "Hello, World"
-print(ss.upper())
+ss = "    Hello, World    "
 
-tt = ss.lower()
-print(tt)
-print(ss)
+els = ss.count("l")
+print(els)
+
+print("***"+ss.strip()+"***")
+
+news = ss.replace("o", "***")
+print(news)
 
 
 
