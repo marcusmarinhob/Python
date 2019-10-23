@@ -9,6 +9,12 @@ num_char = len(fileref.read()) # Reads and returns a string of n characters,
                                # or the entire file as a single string if n 
                                # is not provided.
 
+num_lines = len(fileref.readlines()) # Returns a list of strings, each representing
+                                     # a single line of the file. If n is not provided 
+                                     # then all lines of the file are returned. If n is 
+                                     # provided then n characters are read but n is rounded
+                                     #  up so that an entire line is returned.
+
 fileref.close()
 
 
@@ -17,7 +23,7 @@ fileref.close()
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. read() method' 
+commitMsg = '1. readlines() method' 
 
 if save:
     print('\nAUTO GIT SAVING...')
