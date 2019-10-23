@@ -3,24 +3,15 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-filename = "squared_numbers.txt"
-outfile = open(filename, "w")
-
-for number in range(1, 13):
-    square = number * number
-    outfile.write(str(square) + "\n")
-
-outfile.close()
-
-infile = open(filename, "r")
-print(infile.read()[:10])
-
+with open('mydata.txt', 'r') as md:
+    for line in md:
+        print(line)
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Writing text files' 
+commitMsg = '1. Using with for Files' 
 
 if save:
     print('\nAUTO GIT SAVING...')
