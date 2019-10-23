@@ -3,27 +3,20 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-fileref = open("olympics.txt","r")
+olypmicsfile = open("olympics.txt","r")
 
-num_char = len(fileref.read()) # Reads and returns a string of n characters, 
-                               # or the entire file as a single string if n 
-                               # is not provided.
+for new_line in olypmicsfile.readlines():
+    values = new_line.split(",")
+    print(values[0], "is from", values[3], "and is on the roster for", values[4])
 
-num_lines = len(fileref.readlines()) # Returns a list of strings, each representing
-                                     # a single line of the file. If n is not provided 
-                                     # then all lines of the file are returned. If n is 
-                                     # provided then n characters are read but n is rounded
-                                     #  up so that an entire line is returned.
-
-fileref.close()
-
+olypmicsfile.close()
 
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. readlines() method' 
+commitMsg = '1. readlines() method in for loop' 
 
 if save:
     print('\nAUTO GIT SAVING...')
