@@ -3,18 +3,22 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-sent = "The mall has excellent sales right now."
-wrds = sent.split()
-wrds[1] = 'store'
-new_sent = " ".join(wrds)
+s1 = "Double quotes"
+s2 = 'Single quotes'
 
-print(new_sent)
+m1 = '''
+multiple lines - line 1
+line 2
+line 3'''
 
+print(s1)
+print(s2)
+print(m1)
 
 
 # Auto git saving #####################################################
-save = 0
-commitMsg = '1. Cloning Lists' 
+save = 1 
+commitMsg = '1. Manipulating Strings' 
 
 if save:
     print('\nAUTO GIT SAVING...')
@@ -31,4 +35,4 @@ if save:
 
 
 print('\n# END OF THE SCRIPT ###############################################')
-#print('\n'*15)
+print('\n'*3)

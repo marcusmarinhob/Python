@@ -3,13 +3,23 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-for i in range(5):
-    for j in range(3):
-        print(i, j)
+sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
+
+# Write your code here.
+words = sentence.split()
+
+same_letter_count = 0
+for i in range (0, len(words)):
+    for j in range (0, len(words)):
+        if ( i != j ):
+            if ( (words[i][0] == words[j][0]) and (words[i][-1] == words[j][-1]) ):
+                print(words[i][0])
+                same_letter_count += 1
+
 
 
 # Auto git saving #####################################################
-save = 1
+save = 0
 commitMsg = '1. Loop for - Two loops.' 
 
 if save:

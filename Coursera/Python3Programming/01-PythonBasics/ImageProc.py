@@ -3,18 +3,18 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-sent = "The mall has excellent sales right now."
-wrds = sent.split()
-wrds[1] = 'store'
-new_sent = " ".join(wrds)
+import image
 
-print(new_sent)
-
-
+p = image.Pixel(45, 76, 200)
+print(p.getRed())
+p.setRed(66)
+print(p.getRed())
+p.setBlue(p.getGreen())
+print(p.getGreen(), p.getBlue())
 
 # Auto git saving #####################################################
-save = 0
-commitMsg = '1. Cloning Lists' 
+save = 1
+commitMsg = '1. Image Processing.' 
 
 if save:
     print('\nAUTO GIT SAVING...')

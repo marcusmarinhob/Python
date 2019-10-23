@@ -3,18 +3,33 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-list= [3,0,9,4,1,7]
-new_list=[]
-for i in range(len(list)):
-   new_list.append(list[i]+5)
-print(new_list)
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', 'The']
+sent = "The water earth and air are vital"
+
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', 'The']
+sent = "The water earth and air are vital"
+
+acro = ""
+
+for word in sent.split():
+    if not(word in stopwords):
+        letters = word[0:2].upper()+'.'
+        acro = acro + letters
+        acro.strip()
+        print(acro)
+
+acro = acro[:-1]    
+print(acro)
+
+
+    
 
 
 
 
 
 # Auto git saving #####################################################
-save = 1
+save = 0
 commitMsg = '1. The Accumulator Pattern with Lists' 
 
 if save:

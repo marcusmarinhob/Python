@@ -3,17 +3,15 @@ os.system('cls')
 
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
-origPrice = float(input('Enter the original price: $'))
-discount = float(input('Enter discount percentage: '))
-newPrice = (1 - discount/100)*origPrice
-calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
-print(calculation)
+sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+sports.insert(2,'horseback riding')
+print(sports)
 
 
 
 
 # Auto git saving #####################################################
-save = 1
+save = 0
 commitMsg = '1. Non-mutating Methods on Strings' 
 
 if save:
