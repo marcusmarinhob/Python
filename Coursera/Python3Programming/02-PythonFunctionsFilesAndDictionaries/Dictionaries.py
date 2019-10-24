@@ -4,20 +4,19 @@ os.system('cls')
 print('\n# BEGIN OF THE SCRIPT #############################################')
 
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
+print('apples' in inventory)
+print('cherries' in inventory)
 
-print(list(inventory.values()))
-print(list(inventory.items()))
-
-for k in inventory:
-    print("Got",k,"that maps to",inventory[k])
-
-
+if 'bananas' in inventory:
+    print(inventory['bananas'])
+else:
+    print("We have no bananas")
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Dictionary methods omitting the keys' 
+commitMsg = '1. Dictionary methods' 
 
 if save:
     print('\nAUTO GIT SAVING...')
