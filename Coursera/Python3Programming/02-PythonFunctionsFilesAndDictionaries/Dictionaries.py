@@ -23,7 +23,7 @@ if save:
     
     fileName = os.path.basename(__file__)    
 
-    os.system('echo off')
+    os.system('@echo off')
     os.system('git add '+ fileName)
     os.system('git commit -m '+'"'+commitMsg+'"')
     os.system('git push')
