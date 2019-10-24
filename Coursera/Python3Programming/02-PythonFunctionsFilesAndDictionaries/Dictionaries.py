@@ -5,8 +5,11 @@ print('\n# BEGIN OF THE SCRIPT #############################################')
 
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
+print(list(inventory.values()))
+print(list(inventory.items()))
+
 for k in inventory:
-    print("Got key", k)
+    print("Got",k,"that maps to",inventory[k])
 
 
 
