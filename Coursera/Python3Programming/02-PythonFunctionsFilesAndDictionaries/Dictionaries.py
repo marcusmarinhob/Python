@@ -5,18 +5,16 @@ print('\n# BEGIN OF THE SCRIPT #############################################')
 
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
-for akey in inventory.keys():     # the order in which we get the keys is not defined
-    print("Got key", akey, "which maps to value", inventory[akey])
+for k in inventory:
+    print("Got key", k)
 
-ks = list(inventory.keys())
-print(ks)
 
 
 
 
 # Auto git saving #####################################################
 save = 1
-commitMsg = '1. Dictionary methods' 
+commitMsg = '1. Dictionary methods omitting the keys' 
 
 if save:
     print('\nAUTO GIT SAVING...')
